@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+
+  <!-- Meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muzakki | Website Developer</title>
+  <link rel="icon" type="image/jpeg" href="./profile.jpeg" id="favicon" />
+  <meta name="description"
+    content="I am a student and website developer specializing in the MERN stack, modern web technologies, and functional design." />
+  <meta name="keywords"
+    content="muzakki, website developer, web developer, frontend developer, backend developer, fullstack developer, bandung" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://muzakkigohollow.github.io/" />
+  <meta property="og:title" content="Muzakki | Website Developer" />
+  <meta property="og:description"
+    content="I am a student and website developer specializing in the MERN stack, modern web technologies, and functional design." />
+  <meta property="og:image" content="./profile.jpeg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://muzakkigohollow.github.io/" />
+  <meta property="twitter:title" content="Muzakki | Website Developer" />
+  <meta property="twitter:description"
+    content="I am a student and website developer specializing in the MERN stack, modern web technologies, and functional design." />
+  <meta property="twitter:image" content="./profile.jpeg" />
+
+  <script>
+    // Attention-grabbing effect when tab is not active
+    const favicon = document.getElementById("favicon");
+    const pageTitle = document.querySelector("title");
+    let blinkInterval;
+    const originalTitle = "Muzakki";
+    const alertTitle = "🌟 Vibes this side ⚡";
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        // Start blinking when tab is not active
+        let isVisible = true;
+
+        blinkInterval = setInterval(() => {
+          isVisible = !isVisible;
+
+          // Update favicon
+          const newFaviconPath = "./profile.jpeg";
+          favicon.href = newFaviconPath;
+
+          // Update title with warning emojis
+          pageTitle.textContent = isVisible ? alertTitle : originalTitle;
+        }, 2000); // Blink every half second
+      } else {
+        // Stop blinking and reset to original when tab is active
+        clearInterval(blinkInterval);
+        const resetFaviconPath = "./profile.jpeg";
+        favicon.href = resetFaviconPath;
+        pageTitle.textContent = originalTitle;
+      }
+    });
+
+    // Single Page Apps for GitHub Pages
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="./src/main.tsx"></script>
+</body>
+
+</html>
