@@ -1,0 +1,141 @@
+# ==============================
+# Logs
+# ==============================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==============================
+# Node / JavaScript
+# ==============================
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+dist/
+build/
+out/
+coverage/
+.tmp/
+.temp/
+
+# ==============================
+# Environment files
+# ==============================
+.env
+.env.*
+!.env.example
+*.local
+
+# ==============================
+# Expo / React Native
+# ==============================
+.expo/
+.expo-shared/
+.expo-web/
+web-build/
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+ios/Pods/
+ios/build/
+*.keystore
+*.jks
+
+# ==============================
+# Next / Vite / React
+# ==============================
+.next/
+.nuxt/
+.svelte-kit/
+dist-ssr/
+.vite/
+
+# ==============================
+# TypeScript
+# ==============================
+*.tsbuildinfo
+
+# ==============================
+# Editor directories and files
+# ==============================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.sw?
+
+# ==============================
+# Cursor AI
+# ==============================
+.cursor/
+.cursorrc
+*.cursor-*
+
+# ==============================
+# OS Generated Files
+# ==============================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ==============================
+# Large files / binaries
+# ==============================
+*.exe
+*.msi
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.bin
+
+# ==============================
+# Testing
+# ==============================
+coverage/
+.nyc_output/
+
+# ==============================
+# Database
+# ==============================
+*.sqlite
+*.sqlite3
+*.db
+
+# ==============================
+# Misc
+# ==============================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
